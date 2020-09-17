@@ -1,0 +1,10 @@
+#topBar{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(149, 71, 223);
+}
+
+#actions{
+    float: right;
+    padding-top: 1%;
+}
