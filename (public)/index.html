@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="deneme.css">
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+    </head>
+    <body>
+
+        <h1>
+            EventHunt
+        </h1>
+        <div class="topnav">
+        <h2>GrupAra</h2><input type="text" placeholder="Search..">
+    </div>
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Grup İsmi">
+                <input type="text" name="city" placeholder="Şehir">
+                <button>Grup Ekle</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSkCgSTOGP6MAaNv5zhI9cJe_YX9YTCwM",
+    authDomain: "event-app-a72e9.firebaseapp.com",
+    databaseURL: "https://event-app-a72e9.firebaseio.com",
+    projectId: "event-app-a72e9",
+    storageBucket: "event-app-a72e9.appspot.com",
+    messagingSenderId: "257444204055",
+    appId: "1:257444204055:web:1f44e4de79055b3f581652"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+//   db.settings({ timestampsInSnapshots:true})
+</script>
+        <script src="deneme.js"></script>
+    </body>
+</html>
